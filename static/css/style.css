@@ -19,3 +19,26 @@ a {
     text-decoration: none;
     color: var(--main-color);
 }
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--main-color);
+}
+
+nav {
+    display: block;
+    height: 30px;
+}
+
+nav ul {
+    display: inline;
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    float: left;
+    padding-right: 15px;
+}
