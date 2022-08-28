@@ -1,6 +1,7 @@
 {{ define "main" }}
 	<main>
-        {{ .Content }}
+        <h1 class="center">{{ .Site.Title }}</h1>
+        <h2 class="center">{{ .Site.Params.SubTitle }}</h2>
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 		{{ range $paginator.Pages }}
 			{{ .Render "summary" }}
