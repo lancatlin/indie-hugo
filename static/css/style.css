@@ -1,6 +1,6 @@
 :root {
-    --main-color: pink;
-    --background: black;
+    --main-color: #EAC4D5;
+    --background: #151515;
     --font-color: white;
 }
 
@@ -13,7 +13,7 @@ body {
 }
 
 main {
-    max-width: 720px;
+    max-width: 1024px;
     padding: 20px;
     margin: auto;
 }
@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .center {
     text-align: center;
+}
+
+.title {
+    font-size: 2.5em;
 }
 
 nav {
@@ -55,4 +59,11 @@ article {
     line-height: 1.5;
     word-spacing: -2px;
     text-align: justify;
+}
+
+p {
+}
+
+footer {
+    text-align: center;
 }
