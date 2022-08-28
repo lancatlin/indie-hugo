@@ -2,18 +2,21 @@
     --main-color: #EAC4D5;
     --background: #151515;
     --font-color: white;
+    --main-width: 1024px;
+    --side-width: 300px;
+    --page-width: calc(var(--main-width) + 2 * var(--side-width));
 }
 
 body {
     color: var(--font-color);
     font-family: "monospace";
     background-color: var(--background);
-    max-width: 1440px;
+    max-width: var(--page-width);
     margin: auto;
 }
 
 main {
-    max-width: 1024px;
+    max-width: var(--main-width);
     padding: 20px;
     margin: auto;
 }
@@ -35,13 +38,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.5em;
 }
 
-nav {
+nav.topnav {
     display: block;
     height: 30px;
     margin: 15px;
 }
 
-nav ul {
+nav.topnav ul {
     display: inline;
     float: right;
     list-style-type: none;
@@ -49,7 +52,7 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
+nav.topnav ul li {
     display: inline;
     float: left;
     padding-right: 15px;
@@ -62,8 +65,28 @@ article {
 }
 
 p {
+
 }
 
 footer {
     text-align: center;
+}
+
+aside {
+    margin: 0;
+    padding: 0;
+    width: var(--side-width);
+    position: static;
+    height: 100%;
+    overflow: ;
+}
+
+input:checked ~ aside {
+    margin-left: -300px;
+}
+
+@media screen and (max-width: 1624px) {
+    aside {
+        /* position: sticky; */
+    }
 }

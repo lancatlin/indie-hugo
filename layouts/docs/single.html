@@ -8,6 +8,7 @@
 			</div>
 			{{ with .Params.tags }}
 			<div>
+                <h2>Tags</h2>
 				<ul id="tags">
 					{{ range . }}
 					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
