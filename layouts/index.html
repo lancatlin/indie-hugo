@@ -2,6 +2,9 @@
 	<main>
         <h1 class="center title">{{ .Site.Title }}</h1>
         <h2 class="center">{{ .Site.Params.SubTitle }}</h2>
+        <div align="center">
+        {{ .Content }}
+        </div>
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 		{{ range $paginator.Pages }}
 			{{ .Render "summary" }}
